@@ -1,0 +1,37 @@
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chatbot_css.css') }}">
+
+<div class="chatbot-container">
+    <div class="chat-header" id="chat-header-title">
+        Emergency Triage Chatbot
+    </div>
+
+    <div id="scenario-selection-section" class="scenario-selection">
+        <h2>Select an incident to get help</h2>
+        <select id="scenario-select">
+            <!-- Options will be loaded dynamically by JavaScript -->
+        </select>
+        <button id="start-chat-btn" class="button button--primary">Start Chat</button>
+    </div>
+
+    <div id="chatbot-interface" style="display: none; flex-direction: column; flex-grow: 1;">
+        <div id="chat-messages" class="chat-messages">
+            <!-- Chat messages will be appended here -->
+        </div>
+
+        <div id="chat-options" class="chat-options">
+            <!-- Options buttons will be appended here -->
+        </div>
+
+        <div id="chat-input" class="chat-input" style="display: none;">
+            <input type="text" id="message-input" placeholder="Type your response..." aria-label="Type your response">
+            <button id="send-message-btn">Send</button>
+        </div>
+
+        <div style="text-align: center; padding: 10px;">
+            <button id="end-session-btn" class="button button--secondary" style="display: none;">End Session</button>
+        </div>
+    </div>
+</div>
+
+    <script src="{{ url_for('static', filename='js/chatbot_js.js') }}"></script>

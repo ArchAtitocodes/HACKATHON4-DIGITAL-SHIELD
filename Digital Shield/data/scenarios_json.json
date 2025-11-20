@@ -1,0 +1,281 @@
+{
+  "image_abuse": {
+    "id": "image_abuse",
+    "name": "Image-Based Abuse",
+    "description": "Non-consensual sharing of intimate images or deepfakes",
+    "states": {
+      "start": {
+        "message": "I'm here to help you navigate this difficult situation. Let's take this step by step. First, are these images currently being shared online?",
+        "options": ["yes", "no"],
+        "next_state": {
+          "yes": "shared_online",
+          "no": "threat_only"
+        }
+      },
+      "shared_online": {
+        "message": "I understand this is distressing. Do you know which platform(s) the images are on?",
+        "options": ["yes", "no"],
+        "next_state": {
+          "yes": "platform_known",
+          "no": "platform_unknown"
+        }
+      },
+      "threat_only": {
+        "message": "You're taking the right steps by seeking help now. Has the person made specific threats about sharing these images?",
+        "options": ["yes", "no"],
+        "next_state": {
+          "yes": "active_threat",
+          "no": "preventive"
+        }
+      },
+      "platform_known": {
+        "message": "That's helpful information. You have options to remove this content and protect yourself. I'll provide you with specific steps you can take immediately.",
+        "options": [],
+        "terminal": true
+      },
+      "platform_unknown": {
+        "message": "That's okay. There are still important steps you can take right now to protect yourself and begin the removal process.",
+        "options": [],
+        "terminal": true
+      },
+      "active_threat": {
+        "message": "This is a serious situation, but there are immediate actions you can take to protect yourself and gather evidence.",
+        "options": [],
+        "terminal": true
+      },
+      "preventive": {
+        "message": "It's wise to take preventive action. I'll guide you through steps to secure your accounts and document this situation.",
+        "options": [],
+        "terminal": true
+      }
+    },
+    "actions": [
+      {
+        "priority": 1,
+        "category": "immediate",
+        "title": "Take Immediate Protective Action",
+        "steps": [
+          "Screenshot all threats or shared content (with timestamps visible)",
+          "If images are online, report them immediately using platform reporting tools",
+          "Block the person on all platforms where they can contact you",
+          "Enable two-factor authentication on all your social media accounts",
+          "Change passwords for accounts that may have been compromised"
+        ],
+        "why": "These steps limit further harm and create evidence for potential legal action"
+      },
+      {
+        "priority": 2,
+        "category": "evidence",
+        "title": "Collect and Preserve Evidence",
+        "steps": [
+          "Save all messages, emails, and communication in a secure folder",
+          "Take screenshots showing: dates, times, usernames, and URLs",
+          "Keep original files separate and unedited",
+          "Document every instance with date, time, and platform",
+          "Store everything securely (encrypted folder or trusted cloud storage)"
+        ],
+        "why": "This evidence is crucial if you decide to pursue legal or platform action"
+      },
+      {
+        "priority": 3,
+        "category": "support",
+        "title": "Seek Support and Report",
+        "steps": [
+          "Contact a trusted friend or family member for emotional support",
+          "Report to platform safety teams: Facebook, Instagram, Twitter all have image-based abuse reporting",
+          "Consider contacting: National helpline for gender-based violence in your country",
+          "In Kenya: Fida Kenya (Tel: 0800 720 553), Coalition on Violence Against Women",
+          "You may report to police if you feel safe doing so (image-based abuse is illegal in many African countries)"
+        ],
+        "why": "You don't have to face this alone. Support services and legal protection are available"
+      }
+    ]
+  },
+  "cyberstalking": {
+    "id": "cyberstalking",
+    "name": "Cyberstalking",
+    "description": "Repeated unwanted contact, monitoring, or harassment online",
+    "states": {
+      "start": {
+        "message": "I'm here to support you. Cyberstalking is serious and help is available. Is this person contacting you directly on social media or messaging apps?",
+        "options": ["yes", "no"],
+        "next_state": {
+          "yes": "direct_contact",
+          "no": "indirect_monitoring"
+        }
+      },
+      "direct_contact": {
+        "message": "Has this person created multiple accounts to contact you after being blocked?",
+        "options": ["yes", "no"],
+        "next_state": {
+          "yes": "persistent_contact",
+          "no": "single_account"
+        }
+      },
+      "indirect_monitoring": {
+        "message": "Are you concerned they may be monitoring your location or online activity?",
+        "options": ["yes", "no"],
+        "next_state": {
+          "yes": "tracking_concern",
+          "no": "general_harassment"
+        }
+      },
+      "persistent_contact": {
+        "message": "This pattern of behavior is harassment. There are specific steps to protect yourself and document this behavior.",
+        "options": [],
+        "terminal": true
+      },
+      "single_account": {
+        "message": "Even from one account, repeated unwanted contact is not acceptable. Let's secure your accounts and stop this contact.",
+        "options": [],
+        "terminal": true
+      },
+      "tracking_concern": {
+        "message": "Your safety is the priority. I'll guide you through checking for tracking and securing your digital presence.",
+        "options": [],
+        "terminal": true
+      },
+      "general_harassment": {
+        "message": "Online harassment is unacceptable. There are clear steps you can take to protect yourself.",
+        "options": [],
+        "terminal": true
+      }
+    },
+    "actions": [
+      {
+        "priority": 1,
+        "category": "immediate",
+        "title": "Secure Your Digital Presence",
+        "steps": [
+          "Block the person on all platforms immediately",
+          "Make all social media accounts private (limit who can see your posts and profile)",
+          "Remove location tagging from all posts and photos",
+          "Review your friend/follower lists and remove anyone you don't know personally",
+          "Check your device for stalkerware apps (unusual battery drain, data usage, or unknown apps)",
+          "Change all passwords using a strong, unique password for each account"
+        ],
+        "why": "These steps make it much harder for someone to monitor or contact you online"
+      },
+      {
+        "priority": 2,
+        "category": "evidence",
+        "title": "Document the Pattern of Behavior",
+        "steps": [
+          "Create a detailed log: date, time, platform, and what happened each time",
+          "Screenshot all messages, comments, and contact attempts",
+          "Save any threatening or disturbing messages",
+          "Note any patterns (times of day, types of contact, escalation)",
+          "Keep evidence in a secure, private location"
+        ],
+        "why": "A clear pattern of stalking behavior strengthens any report or legal case"
+      },
+      {
+        "priority": 3,
+        "category": "support",
+        "title": "Report and Get Support",
+        "steps": [
+          "Report the behavior to each platform where it's occurring",
+          "Consider reporting to local authorities (cyberstalking is illegal in many African countries)",
+          "Contact support organizations: In Kenya: FIDA Kenya (0800 720 553), Nairobi Women's Hospital Gender Violence Recovery Centre",
+          "Talk to someone you trust about what's happening",
+          "Consider a restraining order if the person is known to you"
+        ],
+        "why": "Professional support can help you stay safe and hold the stalker accountable"
+      }
+    ]
+  },
+  "online_harassment": {
+    "id": "online_harassment",
+    "name": "Online Harassment",
+    "description": "Abusive messages, trolling, or coordinated attacks",
+    "states": {
+      "start": {
+        "message": "I'm sorry you're experiencing this. Online harassment is never acceptable. Is this coming from one person or multiple people?",
+        "options": ["one_person", "multiple_people"],
+        "next_state": {
+          "one_person": "single_harasser",
+          "multiple_people": "coordinated_attack"
+        }
+      },
+      "single_harasser": {
+        "message": "Are the messages threatening in nature (threats of harm, violence, or exposure)?",
+        "options": ["yes", "no"],
+        "next_state": {
+          "yes": "threatening_messages",
+          "no": "abusive_messages"
+        }
+      },
+      "coordinated_attack": {
+        "message": "Coordinated harassment (brigading or dogpiling) requires a different response. Is this happening on one platform or across multiple platforms?",
+        "options": ["one_platform", "multiple_platforms"],
+        "next_state": {
+          "one_platform": "contained_attack",
+          "multiple_platforms": "widespread_attack"
+        }
+      },
+      "threatening_messages": {
+        "message": "Threats are serious and may be criminal. Your safety is the priority, and there are specific steps to take.",
+        "options": [],
+        "terminal": true
+      },
+      "abusive_messages": {
+        "message": "Even without threats, persistent abusive messages are harassment. You have options to stop this.",
+        "options": [],
+        "terminal": true
+      },
+      "contained_attack": {
+        "message": "Platform-specific tools can help you manage this situation. Let's get you the right protections.",
+        "options": [],
+        "terminal": true
+      },
+      "widespread_attack": {
+        "message": "Cross-platform harassment requires coordinated action. I'll guide you through protecting yourself on multiple fronts.",
+        "options": [],
+        "terminal": true
+      }
+    },
+    "actions": [
+      {
+        "priority": 1,
+        "category": "immediate",
+        "title": "Stop the Immediate Harassment",
+        "steps": [
+          "Do NOT engage or respond to harassers (this often escalates the situation)",
+          "Block the harasser(s) on all platforms",
+          "Mute conversations or keywords related to the harassment",
+          "If on Twitter/X: Use block lists and mute keywords aggressively",
+          "If on Facebook: Adjust who can comment on your posts (friends only)",
+          "Take a break from the platform if needed for your mental health"
+        ],
+        "why": "Removing your visibility to harassers often stops the behavior quickly"
+      },
+      {
+        "priority": 2,
+        "category": "evidence",
+        "title": "Collect Evidence Before Blocking",
+        "steps": [
+          "Screenshot all harassing messages with timestamps and usernames visible",
+          "Save profile information of harassers (usernames, profile URLs)",
+          "Note any identifying information about coordinated attacks",
+          "Document any real-world threats or doxxing (sharing of personal information)",
+          "Store all evidence securely"
+        ],
+        "why": "Evidence is necessary for platform reports and potential legal action"
+      },
+      {
+        "priority": 3,
+        "category": "support",
+        "title": "Report and Seek Support",
+        "steps": [
+          "Report harassment using in-platform tools (all major platforms have reporting)",
+          "For severe cases: Report to platform trust & safety teams directly",
+          "If threatened: Consider police report (online harassment is illegal in many jurisdictions)",
+          "Contact: Pollicy (Uganda-based digital rights org serving East Africa)",
+          "Reach out to: The Cyber Peace Foundation or local digital rights organizations",
+          "Talk to trusted friends or a counselor about the emotional impact"
+        ],
+        "why": "Reporting can lead to account suspension or other consequences for harassers"
+      }
+    ]
+  }
+}

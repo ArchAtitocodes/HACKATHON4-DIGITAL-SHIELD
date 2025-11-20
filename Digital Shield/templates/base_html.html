@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Digital Shield - Safe, private support for technology-facilitated gender-based violence">
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- Privacy & Security -->
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>{% block title %}Digital Shield - You Are Not Alone{% endblock %}</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main_css.css">
+    
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="header__logo" aria-label="Digital Shield Home">
+                    <svg class="header__logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M16 2L4 8v8c0 7.5 5.2 14.5 12 16 6.8-1.5 12-8.5 12-16V8l-12-6z" fill="currentColor"/>
+                        <path d="M14 20l-4-4 1.4-1.4 2.6 2.6 6.6-6.6L22 12l-8 8z" fill="white"/>
+                    </svg>
+                    <span class="header__logo-text">Digital Shield</span>
+                </a>
+                
+                <nav class="header__nav" role="navigation" aria-label="Main navigation">
+                    <a href="/" class="header__nav-link">Home</a>
+                    <a href="/chatbot" class="header__nav-link">Get Help</a>
+                    <a href="/literacy" class="header__nav-link">Safety Guide</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" class="main" role="main">
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">About Digital Shield</h3>
+                    <p class="footer__text">
+                        A safe, private tool for women and girls facing online harm. 
+                        No data is stored. All conversations are private and ephemeral.
+                    </p>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Emergency Contacts</h3>
+                    <ul class="footer__list">
+                        <li>FIDA Kenya: <strong>0800 720 553</strong></li>
+                        <li>GBV Hotline: <strong>1195</strong></li>
+                        <li>Police: <strong>999</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Privacy Promise</h3>
+                    <ul class="footer__list">
+                        <li>✓ No personal data collected</li>
+                        <li>✓ No conversation logs</li>
+                        <li>✓ Sessions expire after 5 minutes</li>
+                        <li>✓ Fully anonymous</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__credit">
+                    Developed by <strong>Eng. Stephen Odhiambo</strong>, 
+                    Kenyan AI Engineer & Software Engineer
+                </p>
+                <p class="footer__note">
+                    Digital Shield MVP - Built for hackathon submission
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Session management -->
+    <script src="{{ url_for('static', filename='js/session_js.js') }}"></script>
+    
+</body>
+</html>

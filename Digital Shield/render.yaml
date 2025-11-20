@@ -1,0 +1,54 @@
+# render.yaml
+# This file configures the deployment of the Digital Shield application on Render.
+
+services:
+  # Web service for the main Flask application
+  - type: web
+    name: digital-shield
+    env: python
+    region: frankfurt # Example region, choose one close to your users
+    plan: free # Use a free instance type
+    
+    # Build configuration
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+      
+    # Start command for the Gunicorn server
+    startCommand: "gunicorn --bind 0.0.0.0:$PORT 'digital_shield_app:app'"
+    
+    # Environment variables
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PYTHON_VERSION
+        value: 3.10.12 # Specify a stable Python version
+      - key: SECRET_KEY
+        generateValue: true # Let Render generate a secure secret key
+
+  # Preview service for pull requests (optional but recommended)
+  - type: web
+    name: digital-shield-pr
+    env: python
+    region: frankfurt
+    plan: free
+    
+    # Build on every pull request
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+      
+    # Start command
+    startCommand: "gunicorn --bind 0.0.0.0:$PORT 'digital_shield_app:app'"
+    
+    # Environment variables
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PYTHON_VERSION
+        value: 3.10.12
+      - key: SECRET_KEY
+        generateValue: true
+    
+    # Enable pull request previews
+    pullRequestPreviewsEnabled: true

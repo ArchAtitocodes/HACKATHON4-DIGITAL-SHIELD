@@ -1,0 +1,250 @@
+/* static/css/chatbot_css.css */
+
+.chatbot-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+}
+
+.chat-header {
+    background-color: #6366f1;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.message-bubble {
+    background-color: #f3f4f6;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    align-self: flex-start;
+    line-height: 1.5;
+}
+
+.message-bubble.user {
+    background-color: #e0f2f7;
+    align-self: flex-end;
+}
+
+.chat-options {
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.option-button {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.option-button:hover {
+    background-color: #c7d2fe;
+    transform: translateY(-2px);
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.chat-input input[type="text"] {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.chat-input button {
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s;
+}
+
+.chat-input button:hover {
+    background-color: #4f46e5;
+}
+
+.scenario-selection {
+    padding: 20px;
+    text-align: center;
+}
+
+.scenario-selection h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.scenario-selection select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.scenario-selection button {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s;
+}
+
+.scenario-selection button:hover {
+    background-color: #059669;
+}
+
+.chatbot-actions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.chatbot-actions li {
+    background-color: #d1fae5;
+    border-left: 5px solid #10b981;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.chatbot-actions h3 {
+    color: #065f46;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.chatbot-actions p {
+    font-size: 0.85em;
+    color: #374151;
+    margin-top: 5px;
+}
+
+/* Base styles for the main.css can be kept minimal or enhanced */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #6366f1;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header__logo-icon {
+    margin-right: 10px;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.header__nav a:hover {
+    color: #6366f1;
+}
+
+.footer {
+    background-color: #333;
+    color: #eee;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__title {
+    color: #6366f1;
+    margin-bottom: 15px;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__list li {
+    margin-bottom: 8px;
+}
+
+.footer__list strong {
+    color: #fff;
+}
+
+.footer__bottom {
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #aaa;
+}

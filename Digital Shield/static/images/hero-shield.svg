@@ -1,0 +1,6 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="400" height="300" fill="#F0F4F8"/>
+<path d="M200 50L50 150V250C50 320 150 370 200 380C250 370 350 320 350 250V150L200 50Z" fill="#6366F1"/>
+<path d="M180 180L140 140L154 126L180 152L260 72L274 86L180 180Z" fill="white"/>
+<text x="200" y="220" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Digital Shield</text>
+</svg>

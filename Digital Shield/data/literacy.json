@@ -1,0 +1,72 @@
+{
+    "WhatsApp": {
+      "title": "WhatsApp Safety Checklist",
+      "description": "Secure your WhatsApp communications and privacy.",
+      "checklist": [
+        "Enable Two-Step Verification: Go to Settings > Account > Two-step verification > Enable.",
+        "Adjust Privacy Settings: Settings > Account > Privacy. Control who sees your 'Last Seen', 'Profile Photo', 'About', and 'Status'. Set to 'My Contacts' or 'Nobody' for more privacy.",
+        "Block Unwanted Contacts: Open chat > Tap contact name > Scroll down > Block.",
+        "Report Spam/Abuse: Open chat > Tap contact name > Scroll down > Report.",
+        "Review Group Privacy: Settings > Account > Privacy > Groups. Control who can add you to groups.",
+        "Disable Live Location Sharing: Settings > Privacy > Live Location. Ensure you're not sharing unnecessarily.",
+        "Backup Safely: Settings > Chats > Chat backup. Consider end-to-end encrypted backup or disable if not needed.",
+        "Be wary of suspicious links or messages, even from known contacts."
+      ]
+    },
+    "Facebook": {
+      "title": "Facebook Safety Checklist",
+      "description": "Strengthen your Facebook privacy and security.",
+      "checklist": [
+        "Use a Strong, Unique Password and Enable Two-Factor Authentication (2FA).",
+        "Review Privacy Settings: Settings & Privacy > Privacy Checkup. Control who sees your posts, profile info, and how people find you.",
+        "Limit Who Can Send Friend Requests: Settings & Privacy > Privacy Checkup > How people can find you on Facebook.",
+        "Control Tagging and Mentions: Settings & Privacy > Profile and Tagging. Decide who can tag you and who can see tagged posts.",
+        "Review Active Sessions: Settings & Privacy > Security and Login > Where you're logged in. Log out of unfamiliar devices.",
+        "Turn Off Location Services for the Facebook App on your device.",
+        "Be cautious about clicking unfamiliar links or accepting friend requests from strangers.",
+        "Report Harassment or Impersonation: Use the reporting tools available on profiles or posts."
+      ]
+    },
+    "Instagram": {
+      "title": "Instagram Safety Checklist",
+      "description": "Protect your photos, videos, and interactions on Instagram.",
+      "checklist": [
+        "Set Your Account to Private: Settings > Privacy > Account Privacy. Only approved followers can see your content.",
+        "Control Story Replies and Mentions: Settings > Privacy > Story. Manage who can reply to your stories and mention you.",
+        "Manage Direct Messages: Settings > Privacy > Messages. Control who can message you.",
+        "Block Unwanted Accounts: Visit profile > Tap three dots > Block. Block and report accounts engaging in harassment.",
+        "Remove Followers: For private accounts, you can remove followers who make you uncomfortable.",
+        "Use a Strong, Unique Password and Enable Two-Factor Authentication (2FA).",
+        "Turn Off Location Services for the Instagram App.",
+        "Be careful about sharing personal information in captions or comments."
+      ]
+    },
+    "Twitter/X": {
+      "title": "Twitter/X Safety Checklist",
+      "description": "Manage your privacy and interactions on Twitter/X.",
+      "checklist": [
+        "Protect Your Tweets: Settings and privacy > Privacy and safety > Audience and tagging > Protect your Tweets. Makes your profile private.",
+        "Review Discoverability: Settings and privacy > Privacy and safety > Discoverability and contacts. Control if others can find you by email or phone number.",
+        "Manage Direct Messages: Settings and privacy > Privacy and safety > Direct Messages. Control who can send you DMs.",
+        "Block and Mute Accounts: Block users who harass you. Use the Mute feature to hide tweets from accounts without blocking them.",
+        "Mute Words and Phrases: Settings and privacy > Privacy and safety > Mute and block > Muted words. Hide specific words or hashtags from your timeline.",
+        "Disable Read Receipts in DMs: Settings and privacy > Privacy and safety > Direct Messages > Show read receipts.",
+        "Use a Strong, Unique Password and Enable Two-Factor Authentication (2FA).",
+        "Be cautious about sharing location or excessive personal details."
+      ]
+    },
+    "TikTok": {
+      "title": "TikTok Safety Checklist",
+      "description": "Keep your TikTok experience safe and private.",
+      "checklist": [
+        "Set Account to Private: Profile > Three lines (top right) > Settings and privacy > Privacy > Private account.",
+        "Control Who Can Comment: Settings and privacy > Privacy > Comments. Set to 'Friends' or 'Nobody'.",
+        "Manage Duet and Stitch Settings: Settings and privacy > Privacy > Duet / Stitch. Control who can use your videos.",
+        "Disable Download of Your Videos: Settings and privacy > Privacy > Downloads. Prevents others from saving your videos.",
+        "Filter Comments: Settings and privacy > Privacy > Comment Filters. Filter all comments or filter keywords.",
+        "Block Accounts: Visit profile > Tap three dots > Block. Block and report any harassing accounts.",
+        "Review Your Following/Follower List regularly.",
+        "Use a Strong, Unique Password and Enable Two-Factor Authentication (2FA)."
+      ]
+    }
+  }
